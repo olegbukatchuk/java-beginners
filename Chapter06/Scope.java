@@ -4,7 +4,11 @@ class Scope {
     System.out.println(txt);
 
     sub();
+
+    System.out.println(Scope.txt);
   }
+
+  final static String txt = "Это глобальная переменная класса Scope";
 
   public static void sub() {
     String txt = "Это локальная переменная метода sub";
