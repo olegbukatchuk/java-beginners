@@ -5,6 +5,7 @@ class Convert {
     int daysInt = (int) daysFloat;
     int weeksInt = Integer.parseInt(weeksString);
     int week = (daysInt / weeksInt);
+    
     System.out.println("Дней в неделе: " + week);
   }
 }
