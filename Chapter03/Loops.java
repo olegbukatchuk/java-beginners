@@ -7,7 +7,7 @@ class Loops {
       }
     }
   */
-  
+
     String[] htm = {
       "HTML5",
       "in",
@@ -20,6 +20,22 @@ class Loops {
     while (j < htm.length) {
       System.out.println("htm[" + j + "] - | " + htm[j] );
       j++ ;
+    }
+
+    String[] xml = {
+      "XML",
+      "in",
+      "easy",
+      "steps"
+    };
+
+    int k = 0;
+
+    if (xml.length > 0) {
+      do {
+        System.out.println("\t\txml[" + k + "] - | " + xml[k]);
+        k++;
+      } while (k < xml.length);
     }
   }
 }
