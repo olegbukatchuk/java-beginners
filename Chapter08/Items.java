@@ -14,7 +14,6 @@ class Items extends JFrame {
     "Томатная"
   };
 
-
   JCheckBox chk1 = new JCheckBox(toppings[0]);
   JCheckBox chk2 = new JCheckBox(toppings[1], true);
   JCheckBox chk3 = new JCheckBox(toppings[2]);
