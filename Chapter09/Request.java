@@ -31,24 +31,22 @@ class Request extends JFrame implements ActionListener {
   }
 
   public void actionPerformed(ActionEventevent) {
+    if (event.getSource() == btn1) {
+      int n = JOptionPane.showConfirmDialog(this , "Вы согласны?", "Диалог подтверждения", JOptionPane.YES_NO_CANCEL_OPTION);
 
-  }
-
-  if (event.getSource() == btn1) {
-    int n = JOptionPane.showConfirmDialog(this , "Вы согласны?", "Диалог подтверждения", JOptionPane.YES_NO_CANCEL_OPTION);
-
-    switch(n) {
-      case 0 : field.setText("Согласен");
-      break;
-      case 1 : field.setText("Не согласен");
-      break;
-      case 2 : field.setText("Отменено");
-      break;
+      switch(n) {
+        case 0 : field.setText("Согласен");
+        break;
+        case 1 : field.setText("Не согласен");
+        break;
+        case 2 : field.setText("Отменено");
+        break;
+      }
     }
-  }
 
 
-  if (event.getSource() == btn2) {
-    field.setText(JOptionPane.showInputDialog(this, "Введите ваш комментарий", "Диалог ввода", JOptionPane.PLAIN_MESSAGE));
+    if (event.getSource() == btn2) {
+      field.setText(JOptionPane.showInputDialog(this, "Введите ваш комментарий", "Диалог ввода", JOptionPane.PLAIN_MESSAGE));
+    }
   }
 }
